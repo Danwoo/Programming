@@ -1,8 +1,9 @@
 import sys
 N = int(sys.stdin.readline())
-divisor = 2 # 최소인 소수(divisor)
-while N > 1:
-    while N % divisor == 0:
-        print(divisor)
-        N //= divisor
-    divisor += 1
+
+for i in range(2,int(N**(0.5))+2):
+    while N%i==0:
+      print(i)
+      N//=i
+if N!=1:
+  print(N)
