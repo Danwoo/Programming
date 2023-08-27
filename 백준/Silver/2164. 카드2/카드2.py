@@ -2,14 +2,10 @@ from collections import deque
 
 N = int(input())
 
-q = deque(range(1,N+1))
+q = deque(range(1, N + 1))
 
-while True:
-  if len(q)==1:
-    print(q[0])
-    break
-  q.popleft()
-  if len(q)==1:
-    print(q[0])
-    break
-  q.append(q.popleft())
+while len(q) > 1:
+    q.popleft()
+    q.append(q.popleft())
+
+print(q[0])
