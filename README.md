@@ -1,1 +1,1 @@
-# 백준 Programming 연습
+# 백준 Programming 잡초키우기
